@@ -14,6 +14,7 @@ group :production do
 end
 
 gem 'therubyracer'  # To avoid "Could not find a javascript runtime" error
+gem 'haml'
 
 
 # Gems used only for assets and not required
