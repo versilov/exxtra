@@ -14,6 +14,10 @@ a {
   color: #007AC2;
 }
 
+a:hover {
+  color: #00adef;
+}
+
 #layout {
   background: url('/assets/main_bg.png') repeat-x #DFE4E7;
   min-width: 990px;
@@ -39,11 +43,11 @@ a {
 div#logo {
   position: absolute;
   left: -90px;
-  top: 18px;
+  top: 9px;
 }
 
 div#logo img {
-  width: 81%;
+  width: 65%;
 }
 
 span#extra {
