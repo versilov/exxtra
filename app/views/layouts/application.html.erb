@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Cuprum&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
   <title>Экстра: полный аутсорсинг интернет-магазинов, комлексное обслуживание интерент-магазинов, складское хранение, колл-центр, упаковка, доставка, обработка заказов.</title>
   <meta name="keywords" content="аутсорсинг интернет-магазина, комплексное обслуживание интернет-магазинов, субподряд, склад, ответственное хранение, обработка заказов, колл-центр, отправка заказов, доставка, почта России, курьер" />
   <meta name="description" content="Компания Экстра комплексно обслуживает любые интернет-магазины, предоставляя услуги складского хранения, приёма звонков, сборки  и упаковки заказов, обработки платежей и автоматизации." />
@@ -10,8 +11,31 @@
   
 </head>
 <body>
+  <div id="layout">
+  
+  <div id="head">
+  
+    <div id="title">
+      <div id="logo"><img src="/assets/exxxtra-logo_03.png" alt="*" /></div>
+      <span id="extra">Экстра</span>
+      <div id="motto">Комплексный аутсорсинг для интернет-магазинов</div>
+    </div> <!-- #title -->
+    
+    <ul id="main_menu">
+      <li class="selected"><span>Начало</span></li>
+      <li><a href="/how">Как это работает</a></li>
+      <li><a href="/price">Тарифы</a></li>
+      <li><a href="/contacts">Контакты</a></li>
+    </ul>
+    <br class="clear" />
+  </div> <!-- #head -->
+  
+  <div id="content">
 
-<%= yield %>
+  <%= yield %>
+
+  </div> <!-- #content -->
+</div> <!-- #layout -->
 
 </body>
 </html>

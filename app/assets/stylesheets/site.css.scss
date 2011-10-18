@@ -1,0 +1,99 @@
+// Place all the styles related to the Site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  line-height: 1.4;
+}
+
+a {
+  color: #007AC2;
+}
+
+#layout {
+  background: url('/assets/main_bg.png') repeat-x #DFE4E7;
+  min-width: 990px;
+  text-align: left;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#head, #content {
+  padding-left: 150px;
+}
+
+#content {
+}
+
+#title {
+  width: 12em;
+  position: relative;
+}
+
+div#logo {
+  position: absolute;
+  left: -90px;
+  top: 18px;
+}
+
+div#logo img {
+  width: 81%;
+}
+
+span#extra {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 56pt;
+  font-weight: 600;
+}
+
+#motto {
+  border-left: 1px solid;
+  font-size: .95em;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+  left: 100%;
+  margin-left: .5em;
+  padding-left: 1em;
+  position: absolute;
+  top: 2.3em;
+  width: 18em;
+}
+
+
+ul#main_menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#main_menu li {
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 3px 8px 4px 8px;
+  font-size: 1.31em;
+}
+
+ul#main_menu li.selected {
+  background-color: #007AC2;
+  color: white;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+#content h1 {
+  font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;
+}
+
+#content p, #content ul {
+/*  font-family: Verdana, Geneva, Arial, Sans-serif;*/
+  max-width: 800px;
+}
