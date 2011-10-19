@@ -100,4 +100,23 @@ ul#main_menu li.selected {
 #content p, #content ul {
 /*  font-family: Verdana, Geneva, Arial, Sans-serif;*/
   max-width: 800px;
+  font-size: 0.875em;
 }
+
+
+#footer {
+  border-top: solid 1px #a6a6a6;
+}
+
+#footer p {
+  margin-left: 150px;
+  margin-bottom: 50px;
+  color: #636363;
+  font-size: .85em;
+}
+
+.questions {
+  font-size: 150% !important;
+}
+
+
