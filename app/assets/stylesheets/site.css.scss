@@ -78,12 +78,17 @@ ul#main_menu {
 ul#main_menu li {
   float: left;
   margin: 0 10px 0 0;
-  padding: 3px 8px 4px 8px;
+  padding: 0;
   font-size: 1.31em;
 }
 
-ul#main_menu li.selected {
+ul#main_menu li a {
+  padding: 3px 8px 4px 8px;
+}
+
+ul#main_menu span {
   background-color: #007AC2;
+  padding: 3px 8px 4px 8px;
   color: white;
 }
 
@@ -93,8 +98,13 @@ ul#main_menu li.selected {
 
 
 
-#content h1 {
+#content h1, #content h2, #content h3, #content h4, #content h5 {
   font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;
+}
+
+#content h4 {
+  margin-bottom: -5px;
+  padding-bottom: 0px;
 }
 
 #content p, #content ul {
@@ -103,6 +113,10 @@ ul#main_menu li.selected {
   font-size: 0.875em;
 }
 
+
+#send_message_button {
+  font-size: 140%;
+}
 
 #footer {
   border-top: solid 1px #a6a6a6;

@@ -1,5 +1,15 @@
 ExxxtraRu::Application.routes.draw do
-  get "site/home"
+  root :to => 'site#home'
+  
+  match '/how' => 'site#how'
+  match '/price' => 'site#price'
+  match '/contacts' => 'site#contacts'
+  match '/send_message' => 'site#send_message', :method => :post
+  
+  # Redirect URLs from the previous version
+  match '/services' => redirect('/how')
+  match '/projects' => redirect('/')
+  match '/company' => redirect('/')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

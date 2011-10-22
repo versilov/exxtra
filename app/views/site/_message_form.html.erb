@@ -1,0 +1,26 @@
+<%= form_tag '/send_message', :method => :post do %>
+
+  <div>
+    <%= label_tag :name, 'Имя' %><br />
+    <%= text_field_tag :name %>
+  </div>
+  
+  <div>
+    <%= label_tag :email, 'Эл. почта' %><br />
+    <%= text_field_tag :email %>
+  </div>
+  
+  <div>
+    <%= label_tag :phone, 'Телефон' %><br />
+    <%= text_field_tag :phone %>
+  </div>
+  
+  <div class="bg text-area">
+    <%= label_tag :message, 'Сообщение' %><br />
+    <%= text_area_tag :message, nil, :cols => 54, :rows => 7 %>
+  </div>
+  
+  <div class="actions">
+    <%= submit_tag 'Отправить', :id => :send_message_button %>
+  </div>
+<% end %>
