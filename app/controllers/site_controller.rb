@@ -1,20 +1,16 @@
 # encoding: utf-8
 
 class SiteController < ApplicationController
-  def home
-  end
-  
-  def contacts
-    @message = "message"
-  end
   
   def send_message
     puts params[:name]
     puts params[:email]
     puts params[:phone]
     puts params[:message]
+    
+    MessageMailer.user_message(params[:name], params[:email], params[:phone], params[:message]).deliver
     respond_to do |format|
-      format.html { redirect_to '/contacts' }
+      format.html { redirect_to '/contacts', :notice => 'Ваше сообщение отправлено, спасибо. Мы ответим вам как можно скорее.' }
     end
   end
 

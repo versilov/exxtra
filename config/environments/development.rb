@@ -27,4 +27,15 @@ ExxxtraRu::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # Email sending config
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.extrastore.ru",
+    :port                 => 2525,
+    :user_name            => 'smtp@extrastore.ru',
+    :password             => 'rubysmtp',
+    :authentication       => :login
+  }
 end
