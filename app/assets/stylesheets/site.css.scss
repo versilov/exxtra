@@ -81,6 +81,7 @@ ul#main_menu {
 
 ul#main_menu li {
   float: left;
+  position: relative;
   margin: 0 10px 0 0;
   padding: 0;
   font-size: 1.31em;
@@ -152,10 +153,12 @@ ol#how {
 p#price {
   font-size: 380%;
   margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 p#price_descript {
-  margin-top: -80px;
+  margin-top: -10px;
   font-size: 233%;
   color: #777;
 }
