@@ -8,5 +8,7 @@ echo $?
 git commit -a -m "$1"
 echo $?
 
-git push heroku
-echo $?
+if test $? -eq 0; then
+  git push heroku
+fi
+
