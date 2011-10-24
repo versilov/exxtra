@@ -2,12 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html, body {
+  height: 100%;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: black;
   line-height: 1.4;
+
 }
 
 a {
@@ -33,6 +39,8 @@ a:hover {
 }
 
 #content {
+  padding-bottom: 7em;
+  position: relative;
 }
 
 #title {
@@ -111,7 +119,15 @@ ul#main_menu span {
 }
 
 #footer {
+  bottom: 0;
+  position: absolute;
+  height: 5em;
+  min-width: 990px;
+  width: 100%;
+  z-index: 1;
+  
   border-top: solid 1px #a6a6a6;
+
 }
 
 #footer p {
