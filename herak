@@ -1,9 +1,6 @@
 #! /bin/sh
 
-set -x
-
 git add .
-echo $?
 
 git commit -a -m "$1"
 
