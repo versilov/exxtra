@@ -1,16 +1,16 @@
 <%= form_tag '/send_message', :method => :post do %>
 
-  <div>
+  <div class="textfield">
     <%= label_tag :name, 'Имя' %><br />
     <%= text_field_tag :name %>
   </div>
   
-  <div>
+  <div class="textfield">
     <%= label_tag :email, 'Эл. почта' %><br />
-    <%= text_field_tag :email %>
+    <%= email_field_tag :email %>
   </div>
   
-  <div>
+  <div class="textfield">
     <%= label_tag :phone, 'Телефон' %><br />
     <%= text_field_tag :phone %>
   </div>
