@@ -3,12 +3,6 @@
 class SiteController < ApplicationController
 
   def send_message
-    puts params[:name]
-    puts params[:email]
-    puts params[:phone]
-    puts params[:message]
-    
-    
     begin
       MessageMailer.user_message(params[:name], params[:email], params[:phone], params[:message]).deliver
     rescue
