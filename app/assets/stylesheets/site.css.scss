@@ -124,6 +124,16 @@ ul#main_menu span {
   margin-top: 9px;
 }
 
+#content #likes {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#content #likes > div {
+  float: left;
+}
+
+
 #footer {
   bottom: 0;
   position: absolute;

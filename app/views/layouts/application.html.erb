@@ -9,7 +9,7 @@
 
   <title>Экстра: полный аутсорсинг интернет-магазинов, комлексное обслуживание интерент-магазинов, складское хранение, колл-центр, упаковка, доставка, обработка заказов.</title>
   <meta name="keywords" content="аутсорсинг интернет-магазина, комплексное обслуживание интернет-магазинов, субподряд, склад, ответственное хранение, обработка заказов, колл-центр, отправка заказов, доставка, почта России, курьер" />
-  <meta name="description" content="Компания Экстра комплексно обслуживает любые интернет-магазины, предоставляя услуги складского хранения, приёма звонков, сборки  и упаковки заказов, обработки платежей и автоматизации." />
+  <meta name="description" content="От создания сайта до доставки товара. Мы берём на себя: колл-центр, склад, приём и обработку заказов, упаковку и отправку, а также работу с возвратами. Сам сайт интернет-магазина для наших клиентов предоставляется бесплатно." />
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -39,6 +39,25 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
   </script>
+  
+  
+  <!-- #VKontakte -->
+  <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?42"></script>
+
+  <script type="text/javascript">
+    VK.init({apiId: 2678064, onlyWidgets: true});
+  </script>
+  
+  <!-- #Facebook -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
    
 </head>
 <body>
@@ -64,7 +83,34 @@
   <div id="content">
 
   <%= yield %>
-    <div class="g-plusone" data-annotation="inline" data-width="200"></div>
+  
+  <div id="likes">
+    <!-- Google Plus -->
+    
+    <div style="width: 80px;">
+      <div class="g-plusone"></div>
+    </div>
+
+    
+    <!-- Facebook -->
+    <div style="width: 90px; margin-top: 1px;">
+      <div class="fb-like" data-href="http://exxtra.ru" data-send="false" data-layout="button_count" data-width="120" data-show-faces="true" data-font="arial"></div>
+    </div>
+    
+    <!-- Twitter -->
+    <div style="width: 120px; margin-top: 2px;">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-lang="ru">Твитнуть</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+    </div>
+    
+    <!-- VKontakte -->
+    <div style="width: 120px;">
+      <div id="vk_like"></div>
+      <script type="text/javascript">
+      VK.Widgets.Like("vk_like", {type: "mini"});
+      </script>
+    </div>
+
+  </div>  <!-- #likes -->
 
   </div> <!-- #content -->
   
