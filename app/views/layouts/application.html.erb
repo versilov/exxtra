@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Organization">
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Cuprum&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+  <meta itemprop="name" content="Экстра: комплексное обслуживание интернет-магазинов">
+  <meta itemprop="description" content="От создания сайта до доставки товара. Мы берём на себя: колл-центр, склад, приём и обработку заказов, упаковку и отправку, а также работу с возвратами. Сам сайт интернет-магазина для наших клиентов предоставляется бесплатно.">
+  <meta itemprop="image" content="http://exxtra.ru/assets/exxxtra.logo.web.png">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -26,7 +28,18 @@
       })();
 
   </script>
-  
+
+  <!-- Place this render call where appropriate -->
+  <script type="text/javascript">
+    window.___gcfg = {lang: 'ru'};
+
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+   
 </head>
 <body>
   <div id="layout">
@@ -57,6 +70,9 @@
   <div id="footer">
     <p>&copy; 2008-2011 ООО "Экстра"<br />
     <a href="/contacts">Контактная информация</a></p>
+    
+    <!-- Place this tag where you want the +1 button to render -->
+    <g:plusone annotation="inline" width="120"></g:plusone>
   </div> <!-- #footer -->
 
 <noindex>
