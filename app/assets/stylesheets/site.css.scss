@@ -124,14 +124,6 @@ ul#main_menu span {
   margin-top: 9px;
 }
 
-#content #likes {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#content #likes > div {
-  float: left;
-}
 
 
 #footer {
@@ -146,12 +138,28 @@ ul#main_menu span {
 
 }
 
-#footer p {
-  margin-left: 150px;
+#footer p#copy {
   margin-bottom: 50px;
   color: #636363;
   font-size: .85em;
 }
+
+#footer #likes {
+  padding-top: 18px;
+  text-align: right;
+  vertical-align: top;
+  font-size: .85em;
+}
+
+#footer table {
+  width: 800px;
+  margin-left: 150px;
+}
+
+#footer #likes > div {
+  float: right;
+}
+
 
 .questions {
   font-size: 150% !important;

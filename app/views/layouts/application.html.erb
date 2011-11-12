@@ -84,44 +84,47 @@
 
   <%= yield %>
   
-  <div id="likes">
-    <!-- Google Plus -->
-    
-    <div style="width: 80px;">
-      <div class="g-plusone"></div>
-    </div>
-    
-    <!-- VKontakte -->
-    <div style="width: 95px; margin-top: 1px;">
-      <div id="vk_like"></div>
-      <script type="text/javascript">
-      VK.Widgets.Like("vk_like", {type: "mini"});
-      </script>
-    </div>
-
-
-    
-    <!-- Facebook -->
-    <div style="width: 90px; margin-top: 1px;">
-      <div class="fb-like" data-href="http://exxtra.ru" data-send="false" data-layout="button_count" data-width="120" data-show-faces="true" data-font="arial"></div>
-    </div>
-    
-    <!-- Twitter -->
-    <div style="width: 120px; margin-top: 2px;">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-lang="ru">Твитнуть</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-    </div>
-    
-
-  </div>  <!-- #likes -->
 
   </div> <!-- #content -->
   
   <div id="footer">
-    <p>&copy; 2008-2011 ООО "Экстра"<br />
-    <a href="/contacts">Контактная информация</a>
-    </p>
-    
-    <!-- Place this tag where you want the +1 button to render -->
+    <table>
+      <tr>
+        <td><p id="copy">&copy; 2008-2011 ООО "Экстра"<br />
+           <a href="/contacts">Контактная информация</a>
+          </p></td>
+
+        <td id="likes">
+          
+
+
+          
+          <!-- Facebook -->
+          <div style="width: 90px; margin-top: 1px;">
+            <div class="fb-like" data-href="http://exxtra.ru" data-send="false" data-layout="button_count" data-width="120" data-show-faces="true" data-font="arial"></div>
+          </div>
+          
+          <!-- Twitter -->
+          <div style="width: 120px; margin-top: 2px;">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-lang="ru">Твитнуть</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          </div>
+          
+        
+          <!-- VKontakte -->
+          <div style="width: 95px; margin-top: 1px;">
+            <div id="vk_like"></div>
+            <script type="text/javascript">
+            VK.Widgets.Like("vk_like", {type: "mini"});
+            </script>
+          </div>
+
+          <!-- Google Plus -->
+          <div style="width: 80px;">
+            <div class="g-plusone"></div>
+          </div>
+
+       </td></tr>
+       </table>
     
   </div> <!-- #footer -->
 
