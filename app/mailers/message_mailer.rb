@@ -6,6 +6,6 @@ class MessageMailer < ActionMailer::Base
     @email = email
     @phone = phone
     @message = message
-    mail :from => "#{name} <#{email}>", :to => 'stas.versilov@gmail.com', :subject => "exxxtra.ru: message from #{name}"
+    mail :from => "#{name} <#{email}>", :to => 'stas.versilov@gmail.com', :subject => "exxtra.ru: message from #{name}"
   end
 end
