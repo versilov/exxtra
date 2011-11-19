@@ -1,5 +1,16 @@
 ActiveAdmin::Dashboards.build do
 
+  section "Recent Messages" do
+   ul do
+     Message.last(5).collect do |message|
+       li do
+          link_to(message.name, admin_message_path(message)) + ": " + truncate(strip_tags(message.message), :length => 108)
+       end
+     end
+   end
+  end
+
+
   # Define your dashboard sections here. Each block will be
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.
