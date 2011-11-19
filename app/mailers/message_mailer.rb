@@ -3,9 +3,13 @@ class MessageMailer < ActionMailer::Base
   
   def user_message(name, email, phone, message)
     @name = name
-    @email = email
+    if email.length > 3
+      @email = email
+    else
+      @email = "stas.versilov@gmail.com"
+    end
     @phone = phone
     @message = message
-    mail :from => "#{name} <#{email}>", :to => 'stas.versilov@gmail.com', :subject => "exxtra.ru: message from #{name}"
+    mail :from => "#{name} <#{@email}>", :to => 'stas.versilov@gmail.com', :subject => "exxtra.ru: message from #{name}"
   end
 end

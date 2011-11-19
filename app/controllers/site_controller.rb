@@ -3,10 +3,14 @@
 class SiteController < ApplicationController
 
   def send_message
+    message = Message.new(:name => params[:name], :email => params[:email], :phone => params[:phone], :message => params[:message])
+    message.save
+    
     begin
       MessageMailer.user_message(params[:name], params[:email], params[:phone], params[:message]).deliver
-    rescue
-      print "\n====Email sending error====\n"
+    rescue Exception
+      STDERR.puts "Error while sending email: #{$!}"
+      raise
     end
     
     respond_to do |format|
