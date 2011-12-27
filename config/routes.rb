@@ -9,6 +9,7 @@ ExxxtraRu::Application.routes.draw do
   match '/price' => 'site#price'
   match '/contacts' => 'site#contacts'
   match '/teach' => 'site#teach'
+  match '/why_samara' => 'site#why_samara'
   match '/send_message' => 'site#send_message', :method => :post
   
   # Redirect URLs from the previous version

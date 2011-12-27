@@ -18,4 +18,8 @@ class SiteController < ApplicationController
     end
   end
 
+  def why_samara
+    @page_title = "Почему Самара?"
+  end
+
 end
