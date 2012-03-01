@@ -2,6 +2,7 @@
 
 class SiteController < ApplicationController
 
+
   def send_message
     message = Message.new(:name => params[:name], :email => params[:email], :phone => params[:phone], :message => params[:message])
     message.save
@@ -20,6 +21,10 @@ class SiteController < ApplicationController
 
   def why_samara
     @page_title = "Почему Самара?"
+  end
+
+  def boxes
+    #render :layout => false
   end
 
 end

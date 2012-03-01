@@ -200,9 +200,12 @@ p.announce
     float: left
     
     margin-top: 30px
-  li p
-    margin-left: 120px
-    margin-top: 5px
+  li
+    p, h2, dl
+      margin-left: 120px
+      margin-top: 5px
+    p.description
+      font-style: italic
   .odd
     float: left
     width: 50%
@@ -295,3 +298,24 @@ p#notice
 div.textfield input 
   width: 270px
 
+
+p#price-list
+  margin-top: -33px
+  margin-bottom: 40px
+  a
+    font-size: 150%
+    img
+      position: relative
+      top: 15px
+      margin: none
+  
+
+
+// Simple grid
+
+.row
+  display: block
+
+  .cell2
+    display: inline
+    width: 50%
