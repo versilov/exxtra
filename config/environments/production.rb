@@ -63,10 +63,10 @@ ExxxtraRu::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => 'exxtra.ru' }
   config.action_mailer.smtp_settings = {
-    :address              => "smtp.versilov.ru",
-    :port                 => 2525,
-    :user_name            => 'smtp@versilov.ru',
-    :password             => 'rubysmtp',
+    :address              => "smtp.mastermail.ru",
+    :port                 => 25,
+    :user_name            => 'administrator@versilov.ru',
+    :password             => '6nsoldermant',
     :authentication       => :login
   }
 end

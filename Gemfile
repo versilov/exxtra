@@ -19,7 +19,7 @@ gem 'haml'
 gem 'slim'
 gem 'slim-rails'
 
-gem 'activeadmin'
+gem 'activeadmin' # What for?
 gem 'sass-rails'
 gem "meta_search", '>= 1.1.0.pre'
 
