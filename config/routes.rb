@@ -1,6 +1,6 @@
 ExxxtraRu::Application.routes.draw do
 
-  root :to => 'site#index'
+  root :to => 'site#home'
   
   match '/how' => 'site#how'
   match '/price' => 'site#price'
@@ -9,6 +9,8 @@ ExxxtraRu::Application.routes.draw do
   match '/why_samara' => 'site#why_samara'
   match '/send_message' => 'site#send_message', :method => :post
   match '/boxes' => 'site#boxes'
+
+  match '/index' => 'site#index'
   
   # Redirect URLs from the previous version
   match '/services' => redirect('/how')
