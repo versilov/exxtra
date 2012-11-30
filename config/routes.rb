@@ -1,6 +1,6 @@
 ExxxtraRu::Application.routes.draw do
 
-  root :to => 'site#home'
+  root :to => 'site#index'
   
   match '/how' => 'site#how'
   match '/price' => 'site#price'

@@ -27,4 +27,8 @@ class SiteController < ApplicationController
     #render :layout => false
   end
 
+  def index
+    render :layout => false
+  end
+
 end
