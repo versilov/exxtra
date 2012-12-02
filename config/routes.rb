@@ -10,7 +10,10 @@ ExxxtraRu::Application.routes.draw do
   match '/send_message' => 'site#send_message', :method => :post
   match '/boxes' => 'site#boxes'
 
+
+  # New version
   match '/index' => 'site#index'
+  match '/inventions' => 'site#inventions'
   
   # Redirect URLs from the previous version
   match '/services' => redirect('/how')

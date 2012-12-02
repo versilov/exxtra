@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 class SiteController < ApplicationController
+  layout 'extraboot', :only => [:index, :inventions]
 
 
   def send_message
@@ -27,8 +28,6 @@ class SiteController < ApplicationController
     #render :layout => false
   end
 
-  def index
-    render :layout => false
-  end
 
+ 
 end
