@@ -14,6 +14,7 @@ ExxxtraRu::Application.routes.draw do
   # New version
   match '/index' => 'site#index'
   match '/inventions' => 'site#inventions'
+  match '/search_results' => 'site#search_results'
   
   # Redirect URLs from the previous version
   match '/services' => redirect('/how')
