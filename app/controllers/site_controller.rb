@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class SiteController < ApplicationController
-  layout 'extraboot', :only => [:index, :inventions]
+  layout 'extraboot', :only => [:index, :inventions, :search_results]
 
 
   def send_message

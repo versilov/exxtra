@@ -60,16 +60,12 @@ html lang="ru"
                     a href="http://cobratox.ru" target="_blank" КобраТокс &mdash; препараты из змеиного яда
               li
                 a href="/contacts" Контакты
-          = render 'yandex_search'
-          .ya-site-form.ya-site-form-inited-no onclick="return {'bg': '#000000', 'target': '_self', 'language': 'ru', 'suggest': true, 'tld': 'ru', 'site_suggest': true, 'action': 'http://exxtra.ru/search_results', 'webopt': false, 'fontsize': 12, 'arrow': false, 'fg': '#000000', 'searchid': '1987029', 'logo': 'rw', 'websearch': false, 'type': 2}"
-            form.navbar-search.pull-right action="http://yandex.ru/sitesearch" method="get" target="_self" 
-              input type="hidden" name="searchid" value="1987029"
-              input type="hidden" name="l10n" value="ru"
-              input type="hidden" name="reqenc" value="utf-8"
-              input.search-query type="text" name="text" placeholder="Поиск"
-          javascript:
-            (function(w,d,c) {
-              var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;(' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1&&(e.className+=' ya-page_js_yes');s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');
+          / = render 'yandex_search'
+          form.navbar-search.pull-right action="http://exxtra.ru/search_results" method="get" target="_self" 
+            input type="hidden" name="searchid" value="1987029"
+            input type="hidden" name="l10n" value="ru"
+            input type="hidden" name="reqenc" value="utf-8"
+            input.search-query type="text" name="text" placeholder="Поиск"
 
 
     = yield :carousel
