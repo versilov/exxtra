@@ -61,11 +61,11 @@ html lang="ru"
               li
                 a href="/contacts" Контакты
           / = render 'yandex_search'
-          form.navbar-search.pull-right action="http://exxtra.ru/search_results" method="get" target="_self" 
+          form.navbar-search.pull-right action="/search_results" method="get" target="_self" 
             input type="hidden" name="searchid" value="1987029"
             input type="hidden" name="l10n" value="ru"
             input type="hidden" name="reqenc" value="utf-8"
-            input.search-query type="text" name="text" placeholder="Поиск"
+            input.search-query type="text" name="text" placeholder="Поиск" value="#{params[:text]}"
 
 
     = yield :carousel
@@ -79,5 +79,6 @@ html lang="ru"
           a href="#" Наверх
         p
           | &copy; 2010-2012, ООО "Экстра" &middot; 
+          | &phone; +7 (846) 221-64-48 &middot; 
           a href="/contacts" Контактная информация
       
